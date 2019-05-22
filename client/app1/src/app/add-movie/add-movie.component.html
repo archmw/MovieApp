@@ -1,0 +1,70 @@
+<div class="container">
+  <h1> Add Movie</h1>
+
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Title</label>
+        <input [(ngModel)] = "title" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Year</label>
+        <input [(ngModel)] = "year" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Directors</label>
+        <input [(ngModel)] = "directors" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Writers</label>
+        <input [(ngModel)] = "writers" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Stars</label>
+        <input [(ngModel)] = "stars" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Genre</label>
+        <input [(ngModel)] = "genre" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="group-form">
+        <label for="">Short Description</label>
+        <textarea [(ngModel)] = "short_description" rows="10" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">Storyline</label>
+          <textarea [(ngModel)] = "storyline" rows="10" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button (click) = "onAdd()" class="btn btn-success">Add</button>
+      <button (click) = "onCancel()" class="btn btn-danger" style="margin-left: 10px">Cancel</button>
+    </div>
+
+  </div>
+</div>

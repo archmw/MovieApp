@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Movie List</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Directors</th>
+        <th>Writers</th>
+        <th>Genre</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.directors}}</td>
+        <td>{{movie.writers}}</td>
+        <td>{{movie.genre}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
